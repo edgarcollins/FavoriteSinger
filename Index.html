@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+
+<marquee behavior="alternate">I &hearts; Aretha...</marquee>
+
+
+<link rel="stylesheet" href="style1.css">
+
+<script src="myjavascript.js"></script>
+
+
+	<title> Favorite Singer </title>
+
+
+	</head>
+	
+	<body>
+
+
+<div class="container">
+	
+<h1>Aretha Franklin</h1>
+</div>
+
+<nav>
+<br>
+
+	<img src="file:///U:/Web%20Design/JavaScript/Aretha_Franklin,_The_Gospel_Tradition_In_Performance_at_the_White_House,_2015.jpg" alt="image of my favorite singer" height="200"> 
+
+<br>
+<br>
+
+<a href="http://www.arethafranklin.net/"><button>Visit Aretha's Website Now</button></a>
+
+<br>
+<br>
+<br>
+
+<a href="Slideshow.html"><button>Aretha's cats</button></a>
+
+<br>
+<br>
+<br>
+
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:black;width:60px;height:30px;padding:30px;border-radius: 20px;font-size: 16px;font-weight: bold;color:white;">
+Click & Hold</div>
+
+<script>
+function mDown(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+    obj.style.backgroundColor="#D94A38";
+    obj.innerHTML="Thank You";
+}
+</script>
+
+<br>
+<br>
+
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+    document.getElementById("demo2").innerHTML = Date();
+}
+</script>
+
+<p id="demo2"></p>
+
+
+</nav>
+
+<article>
+
+<div id="box1"><h2>Her Bio</h2></div>
+
+
+<p>The recipient of the U.S.A.'s highest civilian honor, The Presidential Medal Of Freedom, an eighteen (and counting) Grammy Award winner, the most recent of which was for Best Gospel Performance for "Never Gonna Break My Faith" with Mary J. Blige in 2008 a Grammy Lifetime Achievement and Grammy Living Legend awardee, Aretha Franklin's powerful, distinctive gospel-honed vocal style has influenced countless singers across multi-generations, justifiably earning her Rolling Stone magazine's No. 1 placing on the list of "The Greatest Singers Of All Time."
+
+<p>Marking a glorious reunion with music industry legend Clive Davis (Chief Creative Officer for Sony Music Entertainment) with whom she worked for the longest period of her recording career, twenty-three years at Arista Records (1980-2003) Aretha continues her time-honored tradition of creating new music that is innovative, vital and fresh.</p>
+
+
+<div id="box2"><h3>Select your favorite song:</h3></div>
+
+<br>	
+
+<select id="mySelect">
+
+  <option>You Make Me Feel Like A Natural Woman</option>
+  <option>Chain Of Fools</option>
+  <option>I Never Loved A Man (The Way I Love You)</option>
+  <option>Think</option>
+
+</select>
+
+<div id="box3"><h3>My top 3 favorite songs:</h3></div>
+
+
+	<ol>
+		<li id="demo"> Daydreaming</li> 
+		<li id="demo1"> Call Me</li>
+		<li> Respect </li>
+	</ol>
+
+
+
+
+<a href="https://genius.com/Aretha-franklin-call-me-lyrics"><button>Lyrics (Call Me)</button></a>
+<br>
+<br>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Think"'>Daydreaming? or maybe...</button>
+
+<p class="aside">
+<iframe width="300" height="180" src="https://www.youtube.com/embed/_ddYfaRuVGA" frameborder="20" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</p>
+
+
+</article>
+
+
+<hr>
+
+
+
+
+
+	</body>
+</html>
+		
